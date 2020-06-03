@@ -60,7 +60,7 @@ M8029 C0     ; 0 : Back to Z (0,0,0) position, that is, the position of the mold
              ; 1 : Stay in the limit position
 
 ; 'LED fan LED_Fan control'
-M8030 I-1 ;  0: If set to 0, the default does not turn
+M8030 I-2 ;  0: If set to 0, the default does not turn
           ; -1: keep on
           ; -2: Open when the file is printed, closed when not printing
 
@@ -88,7 +88,7 @@ M8083 I1     ; The limit position is different from the zero point of Z and need
 
 ; 'Z limit point and zero limit difference, the value is usually positive value'
 M8084 Z0     ; If you want to set the offset in the configuration, please remove the semicolon in front of the line command, and you can also automatically configure the offset by setting Z
-             ;to zero on the interface.
+             ; to zero on the interface.
 
 ; 'Start LOGO time'
 M8085 I5000 ; boot logo duration, minimum 5000ms, maximum 6000ms
